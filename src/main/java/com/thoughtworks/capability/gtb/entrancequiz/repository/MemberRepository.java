@@ -10,7 +10,7 @@ import java.util.List;
 @Repository
 public class MemberRepository {
 
-    private List<MemberDto> memberList = new ArrayList<MemberDto>(){
+    private List<MemberDto> memberList = new ArrayList<MemberDto>() {
         {
             add(new MemberDto(1, "成吉思汗"));
             add(new MemberDto(2, "鲁班七号"));

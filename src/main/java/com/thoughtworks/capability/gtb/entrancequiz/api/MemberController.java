@@ -14,10 +14,14 @@ import java.util.List;
 @RestController
 @CrossOrigin
 public class MemberController {
+
     private MemberService memberService;
 
+    public MemberController(MemberService memberService) {
+        this.memberService = memberService;
+    }
+
     @GetMapping("/memberList")
-    @ResponseBody
     public ResponseEntity<List<MemberDto>> getMemberList() {
         return ResponseEntity.ok(memberService.getMemberList());
     }
