@@ -19,6 +19,7 @@ public class GroupController {
     }
 
     @GetMapping("/groupList")
+    // TODO GTB-知识点: - 没有使用泛型
     public ResponseEntity getGroupResult() {
         return ResponseEntity.ok().build();
     }
